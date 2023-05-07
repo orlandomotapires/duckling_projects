@@ -30,10 +30,12 @@
         {
             newproject_label = new Label();
             ProjectList = new GroupBox();
+            criarManager = new Button();
+            addStatus = new Button();
             dateTimePicker2 = new DateTimePicker();
             dateTimePicker1 = new DateTimePicker();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            managersComboBox = new ComboBox();
+            statusBox = new ComboBox();
             status_box = new Label();
             name_textbox = new TextBox();
             create_button = new Button();
@@ -58,10 +60,12 @@
             // 
             // ProjectList
             // 
+            ProjectList.Controls.Add(criarManager);
+            ProjectList.Controls.Add(addStatus);
             ProjectList.Controls.Add(dateTimePicker2);
             ProjectList.Controls.Add(dateTimePicker1);
-            ProjectList.Controls.Add(comboBox2);
-            ProjectList.Controls.Add(comboBox1);
+            ProjectList.Controls.Add(managersComboBox);
+            ProjectList.Controls.Add(statusBox);
             ProjectList.Controls.Add(status_box);
             ProjectList.Controls.Add(name_textbox);
             ProjectList.Controls.Add(create_button);
@@ -78,6 +82,26 @@
             ProjectList.TabIndex = 12;
             ProjectList.TabStop = false;
             // 
+            // criarManager
+            // 
+            criarManager.Location = new Point(253, 104);
+            criarManager.Name = "criarManager";
+            criarManager.Size = new Size(30, 22);
+            criarManager.TabIndex = 26;
+            criarManager.Text = "+";
+            criarManager.UseVisualStyleBackColor = true;
+            criarManager.Click += criarManager_Click;
+            // 
+            // addStatus
+            // 
+            addStatus.Location = new Point(253, 195);
+            addStatus.Name = "addStatus";
+            addStatus.Size = new Size(30, 22);
+            addStatus.TabIndex = 25;
+            addStatus.Text = "+";
+            addStatus.UseVisualStyleBackColor = true;
+            addStatus.Click += addStatus_Click;
+            // 
             // dateTimePicker2
             // 
             dateTimePicker2.Location = new Point(450, 151);
@@ -92,22 +116,25 @@
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 13;
             // 
-            // comboBox2
+            // managersComboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(126, 105);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 23;
+            managersComboBox.FormattingEnabled = true;
+            managersComboBox.Location = new Point(126, 105);
+            managersComboBox.Name = "managersComboBox";
+            managersComboBox.Size = new Size(121, 23);
+            managersComboBox.TabIndex = 23;
+            managersComboBox.SelectedIndexChanged += managersComboBox_SelectedIndexChanged;
+            managersComboBox.Click += managersComboBox_SelectedIndexChanged;
             // 
-            // comboBox1
+            // statusBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Não iniciado", "Em andamento", "Concluído" });
-            comboBox1.Location = new Point(126, 194);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 13;
+            statusBox.FormattingEnabled = true;
+            statusBox.Location = new Point(126, 194);
+            statusBox.Name = "statusBox";
+            statusBox.Size = new Size(121, 23);
+            statusBox.TabIndex = 13;
+            statusBox.SelectedIndexChanged += statusBox_SelectedIndexChanged_1;
+            statusBox.Click += statusBox_SelectedIndexChanged_1;
             // 
             // status_box
             // 
@@ -125,6 +152,7 @@
             name_textbox.Name = "name_textbox";
             name_textbox.Size = new Size(100, 23);
             name_textbox.TabIndex = 18;
+            name_textbox.TextChanged += name_textbox_TextChanged;
             // 
             // create_button
             // 
@@ -221,9 +249,10 @@
         public TextBox name_textbox;
         public DateTimePicker dateTimePicker2;
         public DateTimePicker dateTimePicker1;
-        public ComboBox comboBox2;
-        public ComboBox comboBox1;
+        public ComboBox managersComboBox;
+        public ComboBox statusBox;
         public Label status_box;
-
+        private Button addStatus;
+        private Button criarManager;
     }
 }

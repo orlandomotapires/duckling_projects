@@ -22,18 +22,7 @@ namespace DucklingProject.PL
         }
 
         private void deleteproject_button_Click(object sender, EventArgs e)
-        {
-            TbStatus status = new TbStatus();
-            StatusRepository statusRepository = new StatusRepository(); 
-
-            status.Status = "Nao iniciado";
-            statusRepository.Add(status);
-
-            status.Status = "Em andamento";
-            statusRepository.Add(status);
-
-            status.Status = "Nao iniciado";
-            statusRepository.Add(status);
+        {          
 
         }
     }

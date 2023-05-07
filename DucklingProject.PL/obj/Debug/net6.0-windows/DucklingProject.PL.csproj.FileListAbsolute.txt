@@ -59,3 +59,5 @@ C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\Duckl
 C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.PL\obj\Debug\net6.0-windows\DucklingProject.PL.ModalProjetos.resources
 C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.PL\obj\Debug\net6.0-windows\DucklingProject.PL.TelaPrincipal.resources
 C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.PL\obj\Debug\net6.0-windows\DucklingProject.PL.csproj.CopyComplete
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.PL\obj\Debug\net6.0-windows\DucklingProject.PL.ModalStatus.resources
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.PL\obj\Debug\net6.0-windows\DucklingProject.PL.ModalManager.resources
