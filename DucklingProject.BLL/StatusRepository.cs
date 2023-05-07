@@ -22,5 +22,23 @@ namespace DucklingProject.BLL
                 return all_status;
             }
         }
+
+        public TbStatus GetById(int id)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var status = dbContext.TbStatuses.Single(p => p.IdStatus == id);
+                return status;
+            }
+        }
+
+        public TbStatus GetByName(string statusName)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var status = dbContext.TbStatuses.Single(p => p.Status == statusName);
+                return status;
+            }
+        }
     }
 }

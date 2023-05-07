@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="ModalManager.cs">
+    <Compile Update="Modais\ModalManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ModalProjetos.cs">
+    <Compile Update="Modais\ModalCreateProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ModalStatus.cs">
+    <Compile Update="Modais\ModalStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Modais\ModalUpdateProject.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TelaPrincipal.cs">

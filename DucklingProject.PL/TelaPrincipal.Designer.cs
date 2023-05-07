@@ -41,12 +41,13 @@
             startdate_label = new Label();
             namelog_label = new Label();
             ProjectsLog = new ListView();
-            Name = new ColumnHeader();
-            StartDate = new ColumnHeader();
+            Abacaxi = new ColumnHeader();
+            Startdate = new ColumnHeader();
             FinishDate = new ColumnHeader();
             log_label = new Label();
             colorDialog1 = new ColorDialog();
             ch = new ColumnHeader();
+            refreshButton = new Button();
             ProjectList.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             updateproject_button.TabIndex = 1;
             updateproject_button.Text = "Update Project";
             updateproject_button.UseVisualStyleBackColor = false;
+            updateproject_button.Click += updateproject_button_Click;
             // 
             // deleteproject_button
             // 
@@ -132,7 +134,7 @@
             finishdate_label.AutoSize = true;
             finishdate_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             finishdate_label.ForeColor = Color.FromArgb(255, 122, 0);
-            finishdate_label.Location = new Point(260, 14);
+            finishdate_label.Location = new Point(260, 12);
             finishdate_label.Name = "finishdate_label";
             finishdate_label.Size = new Size(87, 21);
             finishdate_label.TabIndex = 13;
@@ -143,7 +145,7 @@
             startdate_label.AutoSize = true;
             startdate_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             startdate_label.ForeColor = Color.FromArgb(255, 122, 0);
-            startdate_label.Location = new Point(150, 14);
+            startdate_label.Location = new Point(148, 12);
             startdate_label.Name = "startdate_label";
             startdate_label.Size = new Size(78, 21);
             startdate_label.TabIndex = 12;
@@ -162,25 +164,31 @@
             // 
             // ProjectsLog
             // 
-            ProjectsLog.BackColor = SystemColors.InfoText;
-            ProjectsLog.Columns.AddRange(new ColumnHeader[] { Name, StartDate, FinishDate });
-            ProjectsLog.Location = new Point(6, 38);
+            ProjectsLog.BackColor = SystemColors.HighlightText;
+            ProjectsLog.Columns.AddRange(new ColumnHeader[] { Abacaxi, Startdate, FinishDate });
+            ProjectsLog.Location = new Point(6, 36);
             ProjectsLog.Name = "ProjectsLog";
             ProjectsLog.Size = new Size(354, 295);
             ProjectsLog.TabIndex = 11;
             ProjectsLog.UseCompatibleStateImageBehavior = false;
+            ProjectsLog.View = View.Details;
+            ProjectsLog.SelectedIndexChanged += ProjectsLog_SelectedIndexChanged;
             // 
-            // Name
+            // Abacaxi
             // 
-            Name.Text = "Name";
+            Abacaxi.Name = "TelaPrincipal";
+            Abacaxi.Text = "Name";
+            Abacaxi.Width = 140;
             // 
-            // StartDate
+            // Startdate
             // 
-            StartDate.Text = "StartDate";
+            Startdate.Text = "StartDate";
+            Startdate.Width = 110;
             // 
             // FinishDate
             // 
             FinishDate.Text = "FinishDate";
+            FinishDate.Width = 120;
             // 
             // log_label
             // 
@@ -197,20 +205,32 @@
             // 
             ch.Text = "Tela_principal";
             // 
+            // refreshButton
+            // 
+            refreshButton.Location = new Point(548, 464);
+            refreshButton.Name = "refreshButton";
+            refreshButton.Size = new Size(99, 23);
+            refreshButton.TabIndex = 11;
+            refreshButton.Text = "Refresh Projects";
+            refreshButton.UseVisualStyleBackColor = true;
+            refreshButton.Click += refreshButton_Click;
+            // 
             // TelaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(944, 501);
+            Controls.Add(refreshButton);
             Controls.Add(log_label);
             Controls.Add(ProjectList);
             Controls.Add(duckling_label);
             Controls.Add(deleteproject_button);
             Controls.Add(updateproject_button);
             Controls.Add(createproject_button);
-            //Name = "TelaPrincipal";
+            //me = "TelaPrincipal";
             Text = "Tela principal";
+            Load += TelaPrincipal_Load;
             ProjectList.ResumeLayout(false);
             ProjectList.PerformLayout();
             ResumeLayout(false);
@@ -230,13 +250,14 @@
         private Label log_label;
         private ListView ProjectsLog;
         private ColumnHeader Name;
-        private ColumnHeader StartDate;
+        private ColumnHeader Startdate;
         private ColumnHeader FinishDate;
         private Label finishdate_label;
         private Label startdate_label;
         private Label namelog_label;
         private ColorDialog colorDialog1;
         private ColumnHeader ch;
-
+        private ColumnHeader Abacaxi;
+        private Button refreshButton;
     }
 }

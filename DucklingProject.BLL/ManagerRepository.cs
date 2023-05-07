@@ -22,5 +22,23 @@ namespace DucklingProject.BLL
                 return all_managers;
             }
         }
+
+        public TbManager GetById(int id)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var manager = dbContext.TbManagers.Single(p => p.IdManager == id);
+                return manager;
+            }
+        }
+
+        public TbManager GetByName(string name)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var manager = dbContext.TbManagers.Single(p => p.ManagerName == name);
+                return manager;
+            }
+        }
     }
 }
