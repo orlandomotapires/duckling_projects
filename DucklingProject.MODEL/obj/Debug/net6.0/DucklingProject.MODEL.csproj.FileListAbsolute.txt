@@ -1,0 +1,12 @@
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\bin\Debug\net6.0\DucklingProject.MODEL.deps.json
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\bin\Debug\net6.0\DucklingProject.MODEL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\bin\Debug\net6.0\DucklingProject.MODEL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.csproj.AssemblyReference.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.AssemblyInfoInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.AssemblyInfo.cs
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\refint\DucklingProject.MODEL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\DucklingProject.MODEL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.MODEL\obj\Debug\net6.0\ref\DucklingProject.MODEL.dll

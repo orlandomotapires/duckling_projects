@@ -1,0 +1,17 @@
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.BLL.deps.json
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.BLL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.BLL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.csproj.AssemblyReference.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.AssemblyInfoInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.AssemblyInfo.cs
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\refint\DucklingProject.BLL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\ref\DucklingProject.BLL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.DAL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.MODEL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.DAL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\bin\Debug\net6.0\DucklingProject.MODEL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.BLL\obj\Debug\net6.0\DucklingProject.BLL.csproj.CopyComplete
