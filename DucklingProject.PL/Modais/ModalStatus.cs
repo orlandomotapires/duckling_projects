@@ -31,7 +31,9 @@ namespace DucklingProject.PL
                 statusRepository.Add(status);
 
                 MessageBox.Show("Status inserido com sucesso!");
-            }catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
 

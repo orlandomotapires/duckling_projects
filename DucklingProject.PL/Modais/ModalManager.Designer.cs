@@ -29,33 +29,35 @@
         private void InitializeComponent()
         {
             managerNameBox = new TextBox();
-            nomeManagerLabel = new Label();
+            nomeManager_label = new Label();
             criaManagerButton = new Button();
             SuspendLayout();
             // 
             // managerNameBox
             // 
-            managerNameBox.Location = new Point(22, 48);
+            managerNameBox.Location = new Point(18, 48);
             managerNameBox.Name = "managerNameBox";
             managerNameBox.Size = new Size(100, 23);
             managerNameBox.TabIndex = 0;
             // 
-            // nomeManagerLabel
+            // nomeManager_label
             // 
-            nomeManagerLabel.AutoSize = true;
-            nomeManagerLabel.Location = new Point(22, 21);
-            nomeManagerLabel.Name = "nomeManagerLabel";
-            nomeManagerLabel.Size = new Size(146, 15);
-            nomeManagerLabel.TabIndex = 1;
-            nomeManagerLabel.Text = "Insira o nome do manager";
+            nomeManager_label.AutoSize = true;
+            nomeManager_label.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            nomeManager_label.ForeColor = Color.DarkOrange;
+            nomeManager_label.Location = new Point(18, 9);
+            nomeManager_label.Name = "nomeManager_label";
+            nomeManager_label.Size = new Size(228, 28);
+            nomeManager_label.TabIndex = 1;
+            nomeManager_label.Text = "Insert the manager name";
             // 
             // criaManagerButton
             // 
-            criaManagerButton.Location = new Point(96, 93);
+            criaManagerButton.Location = new Point(147, 112);
             criaManagerButton.Name = "criaManagerButton";
-            criaManagerButton.Size = new Size(95, 23);
+            criaManagerButton.Size = new Size(112, 23);
             criaManagerButton.TabIndex = 2;
-            criaManagerButton.Text = "Criar manager";
+            criaManagerButton.Text = "Create manager";
             criaManagerButton.UseVisualStyleBackColor = true;
             criaManagerButton.Click += criaManagerButton_Click;
             // 
@@ -63,12 +65,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(208, 135);
+            BackColor = Color.Black;
+            ClientSize = new Size(271, 147);
             Controls.Add(criaManagerButton);
-            Controls.Add(nomeManagerLabel);
+            Controls.Add(nomeManager_label);
             Controls.Add(managerNameBox);
             Name = "ModalManager";
-            Text = "ModalManager";
+            ShowIcon = false;
+            Text = "Create Manager";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -76,7 +80,7 @@
         #endregion
 
         private TextBox managerNameBox;
-        private Label nomeManagerLabel;
+        private Label nomeManager_label;
         private Button criaManagerButton;
     }
 }

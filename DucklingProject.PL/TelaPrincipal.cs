@@ -15,26 +15,36 @@ namespace DucklingProject.PL
         private void createproject_button_Click(object sender, EventArgs e)
         {
             ModalCreateProject ts = new ModalCreateProject();
+            ts.Location = new Point(0, 0);
             ts.Show();
         }
 
         private void deleteproject_button_Click(object sender, EventArgs e)
         {
             ProjectRepository pr = new ProjectRepository();
-            pr.DeleteByName(delete_box.Text);
+            foreach (ListViewItem item in projects_listview.Items)
+            {
+                if (item.Checked)
+                {
+                    pr.DeleteByName(item.Text);
+                    MessageBox.Show("Project: " + item.Text + " sucessfully deleted!");
+                }
+            }
 
         }
 
         private void updateproject_button_Click(object sender, EventArgs e)
         {
             ModalUpdateProject ts = new ModalUpdateProject();
+            ts.Location = new Point(0, 0);
             ts.Show();
         }
 
         public void projectsLog()
         {
-            ProjectsLog.Items.Clear();
+            projects_listview.Items.Clear();
             ProjectRepository pr = new ProjectRepository();
+            ManagerRepository mr = new ManagerRepository();
             List<TbProject> log = pr.GetAll();
 
             foreach (TbProject logItem in log)
@@ -59,18 +69,29 @@ namespace DucklingProject.PL
                     lvi.SubItems.Add("---");
                 }
 
-                if (!ProjectsLog.Items.Contains(lvi))
+                if (logItem.IdManager != null)
                 {
-                    ProjectsLog.Items.Add(lvi);
+                    var managerName = mr.GetById(logItem.IdManager);
+                    lvi.SubItems.Add(managerName.ManagerName);
+                }
+                else
+                {
+                    lvi.SubItems.Add("---");
                 }
 
+                if (!projects_listview.Items.Contains(lvi))
+                {
+                    projects_listview.Items.Add(lvi);
+                }
+              
             }
 
-            ProjectsLog.Dock = DockStyle.Fill;
+            projects_listview.Dock = DockStyle.Fill;
         }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             projectsLog();
         }
 
@@ -82,6 +103,16 @@ namespace DucklingProject.PL
         private void refreshButton_Click(object sender, EventArgs e)
         {
             projectsLog();
+        }
+
+        private void delete_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
 }

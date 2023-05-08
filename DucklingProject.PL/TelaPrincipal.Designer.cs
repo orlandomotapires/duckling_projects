@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Label manageprojects_label;
             createproject_button = new Button();
             updateproject_button = new Button();
             deleteproject_button = new Button();
@@ -36,31 +37,39 @@
             imageList1 = new ImageList(components);
             imageList2 = new ImageList(components);
             contextMenuStrip1 = new ContextMenuStrip(components);
-            ProjectList = new GroupBox();
-            finishdate_label = new Label();
-            startdate_label = new Label();
-            namelog_label = new Label();
-            ProjectsLog = new ListView();
-            Abacaxi = new ColumnHeader();
-            Startdate = new ColumnHeader();
-            FinishDate = new ColumnHeader();
             log_label = new Label();
             colorDialog1 = new ColorDialog();
             ch = new ColumnHeader();
             refreshButton = new Button();
-            delete_box = new TextBox();
-            ProjectList.SuspendLayout();
+            projects_listview = new ListView();
+            name_column = new ColumnHeader();
+            Startdate = new ColumnHeader();
+            FinishDate = new ColumnHeader();
+            Manager = new ColumnHeader();
+            groupBox1 = new GroupBox();
+            toolTip1 = new ToolTip(components);
+            manageprojects_label = new Label();
+            groupBox1.SuspendLayout();
             SuspendLayout();
+            // 
+            // manageprojects_label
+            // 
+            manageprojects_label.AutoSize = true;
+            manageprojects_label.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            manageprojects_label.ForeColor = Color.FromArgb(255, 122, 0);
+            manageprojects_label.Location = new Point(524, 71);
+            manageprojects_label.Name = "manageprojects_label";
+            manageprojects_label.Size = new Size(214, 37);
+            manageprojects_label.TabIndex = 15;
+            manageprojects_label.Text = "Manage Projects";
             // 
             // createproject_button
             // 
             createproject_button.BackColor = Color.FromArgb(59, 0, 106);
-            createproject_button.FlatAppearance.BorderSize = 15;
-            createproject_button.FlatStyle = FlatStyle.Flat;
-            createproject_button.ForeColor = Color.FromArgb(255, 122, 0);
-            createproject_button.Location = new Point(65, 96);
+            createproject_button.ForeColor = Color.White;
+            createproject_button.Location = new Point(524, 120);
             createproject_button.Name = "createproject_button";
-            createproject_button.Size = new Size(169, 99);
+            createproject_button.Size = new Size(126, 47);
             createproject_button.TabIndex = 0;
             createproject_button.Text = "Create Project";
             createproject_button.UseVisualStyleBackColor = false;
@@ -69,10 +78,10 @@
             // updateproject_button
             // 
             updateproject_button.BackColor = Color.FromArgb(59, 0, 106);
-            updateproject_button.ForeColor = Color.FromArgb(255, 122, 0);
-            updateproject_button.Location = new Point(65, 328);
+            updateproject_button.ForeColor = Color.White;
+            updateproject_button.Location = new Point(656, 120);
             updateproject_button.Name = "updateproject_button";
-            updateproject_button.Size = new Size(169, 99);
+            updateproject_button.Size = new Size(126, 46);
             updateproject_button.TabIndex = 1;
             updateproject_button.Text = "Update Project";
             updateproject_button.UseVisualStyleBackColor = false;
@@ -81,10 +90,10 @@
             // deleteproject_button
             // 
             deleteproject_button.BackColor = Color.FromArgb(59, 0, 106);
-            deleteproject_button.ForeColor = Color.FromArgb(255, 122, 0);
-            deleteproject_button.Location = new Point(65, 210);
+            deleteproject_button.ForeColor = Color.White;
+            deleteproject_button.Location = new Point(788, 120);
             deleteproject_button.Name = "deleteproject_button";
-            deleteproject_button.Size = new Size(169, 99);
+            deleteproject_button.Size = new Size(126, 46);
             deleteproject_button.TabIndex = 2;
             deleteproject_button.Text = "Delete Project";
             deleteproject_button.UseVisualStyleBackColor = false;
@@ -95,7 +104,7 @@
             duckling_label.AutoSize = true;
             duckling_label.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
             duckling_label.ForeColor = Color.FromArgb(255, 122, 0);
-            duckling_label.Location = new Point(299, 9);
+            duckling_label.Location = new Point(26, 9);
             duckling_label.Name = "duckling_label";
             duckling_label.Size = new Size(329, 54);
             duckling_label.TabIndex = 4;
@@ -118,87 +127,14 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // ProjectList
-            // 
-            ProjectList.Controls.Add(finishdate_label);
-            ProjectList.Controls.Add(startdate_label);
-            ProjectList.Controls.Add(namelog_label);
-            ProjectList.Controls.Add(ProjectsLog);
-            ProjectList.Location = new Point(548, 119);
-            ProjectList.Name = "ProjectList";
-            ProjectList.Size = new Size(366, 339);
-            ProjectList.TabIndex = 10;
-            ProjectList.TabStop = false;
-            // 
-            // finishdate_label
-            // 
-            finishdate_label.AutoSize = true;
-            finishdate_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            finishdate_label.ForeColor = Color.FromArgb(255, 122, 0);
-            finishdate_label.Location = new Point(260, 12);
-            finishdate_label.Name = "finishdate_label";
-            finishdate_label.Size = new Size(87, 21);
-            finishdate_label.TabIndex = 13;
-            finishdate_label.Text = "Finish Date";
-            // 
-            // startdate_label
-            // 
-            startdate_label.AutoSize = true;
-            startdate_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            startdate_label.ForeColor = Color.FromArgb(255, 122, 0);
-            startdate_label.Location = new Point(148, 12);
-            startdate_label.Name = "startdate_label";
-            startdate_label.Size = new Size(78, 21);
-            startdate_label.TabIndex = 12;
-            startdate_label.Text = "Start Date";
-            // 
-            // namelog_label
-            // 
-            namelog_label.AutoSize = true;
-            namelog_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            namelog_label.ForeColor = Color.FromArgb(255, 122, 0);
-            namelog_label.Location = new Point(30, 12);
-            namelog_label.Name = "namelog_label";
-            namelog_label.Size = new Size(52, 21);
-            namelog_label.TabIndex = 11;
-            namelog_label.Text = "Name";
-            // 
-            // ProjectsLog
-            // 
-            ProjectsLog.BackColor = SystemColors.HighlightText;
-            ProjectsLog.Columns.AddRange(new ColumnHeader[] { Abacaxi, Startdate, FinishDate });
-            ProjectsLog.Location = new Point(6, 36);
-            ProjectsLog.Name = "ProjectsLog";
-            ProjectsLog.Size = new Size(354, 295);
-            ProjectsLog.TabIndex = 11;
-            ProjectsLog.UseCompatibleStateImageBehavior = false;
-            ProjectsLog.View = View.Details;
-            ProjectsLog.SelectedIndexChanged += ProjectsLog_SelectedIndexChanged;
-            // 
-            // Abacaxi
-            // 
-            Abacaxi.Name = "TelaPrincipal";
-            Abacaxi.Text = "Name";
-            Abacaxi.Width = 140;
-            // 
-            // Startdate
-            // 
-            Startdate.Text = "StartDate";
-            Startdate.Width = 110;
-            // 
-            // FinishDate
-            // 
-            FinishDate.Text = "FinishDate";
-            FinishDate.Width = 120;
-            // 
             // log_label
             // 
             log_label.AutoSize = true;
-            log_label.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            log_label.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             log_label.ForeColor = Color.FromArgb(255, 122, 0);
-            log_label.Location = new Point(682, 88);
+            log_label.Location = new Point(26, 129);
             log_label.Name = "log_label";
-            log_label.Size = new Size(119, 28);
+            log_label.Size = new Size(162, 37);
             log_label.TabIndex = 8;
             log_label.Text = "Projects Log";
             // 
@@ -208,20 +144,70 @@
             // 
             // refreshButton
             // 
-            refreshButton.Location = new Point(548, 464);
+            refreshButton.Location = new Point(194, 143);
             refreshButton.Name = "refreshButton";
-            refreshButton.Size = new Size(99, 23);
+            refreshButton.Size = new Size(110, 23);
             refreshButton.TabIndex = 11;
             refreshButton.Text = "Refresh Projects";
             refreshButton.UseVisualStyleBackColor = true;
             refreshButton.Click += refreshButton_Click;
             // 
-            // delete_box
+            // projects_listview
             // 
-            delete_box.Location = new Point(251, 249);
-            delete_box.Name = "delete_box";
-            delete_box.Size = new Size(100, 23);
-            delete_box.TabIndex = 12;
+            projects_listview.Alignment = ListViewAlignment.Default;
+            projects_listview.AllowColumnReorder = true;
+            projects_listview.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            projects_listview.BackColor = Color.Black;
+            projects_listview.BorderStyle = BorderStyle.None;
+            projects_listview.CheckBoxes = true;
+            projects_listview.Columns.AddRange(new ColumnHeader[] { name_column, Startdate, FinishDate, Manager });
+            projects_listview.ContextMenuStrip = contextMenuStrip1;
+            projects_listview.ForeColor = Color.DarkOrange;
+            projects_listview.FullRowSelect = true;
+            projects_listview.LabelEdit = true;
+            projects_listview.Location = new Point(13, 22);
+            projects_listview.Margin = new Padding(10, 25, 10, 10);
+            projects_listview.Name = "projects_listview";
+            projects_listview.Size = new Size(862, 281);
+            projects_listview.TabIndex = 11;
+            projects_listview.UseCompatibleStateImageBehavior = false;
+            projects_listview.View = View.Details;
+            projects_listview.SelectedIndexChanged += ProjectsLog_SelectedIndexChanged;
+            // 
+            // name_column
+            // 
+            name_column.Name = "TelaPrincipal";
+            name_column.Text = "Name";
+            name_column.Width = 200;
+            // 
+            // Startdate
+            // 
+            Startdate.Text = "StartDate";
+            Startdate.Width = 200;
+            // 
+            // FinishDate
+            // 
+            FinishDate.Text = "FinishDate";
+            FinishDate.Width = 200;
+            // 
+            // Manager
+            // 
+            Manager.Text = "Manager";
+            Manager.Width = 250;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(projects_listview);
+            groupBox1.Location = new Point(26, 172);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(888, 322);
+            groupBox1.TabIndex = 14;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // toolTip1
+            // 
+            toolTip1.Popup += toolTip1_Popup;
             // 
             // TelaPrincipal
             // 
@@ -229,19 +215,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(944, 501);
-            Controls.Add(delete_box);
+            Controls.Add(manageprojects_label);
             Controls.Add(refreshButton);
+            Controls.Add(groupBox1);
             Controls.Add(log_label);
-            Controls.Add(ProjectList);
             Controls.Add(duckling_label);
             Controls.Add(deleteproject_button);
             Controls.Add(updateproject_button);
             Controls.Add(createproject_button);
             //Name = "TelaPrincipal";
-            Text = "Tela principal";
+            ShowIcon = false;
+            Text = "Duckling";
             Load += TelaPrincipal_Load;
-            ProjectList.ResumeLayout(false);
-            ProjectList.PerformLayout();
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,19 +241,17 @@
         private ImageList imageList1;
         private ImageList imageList2;
         private ContextMenuStrip contextMenuStrip1;
-        private GroupBox ProjectList;
         private Label log_label;
-        private ListView ProjectsLog;
         private ColumnHeader Name;
-        private ColumnHeader Startdate;
-        private ColumnHeader FinishDate;
-        private Label finishdate_label;
-        private Label startdate_label;
-        private Label namelog_label;
         private ColorDialog colorDialog1;
         private ColumnHeader ch;
-        private ColumnHeader Abacaxi;
         private Button refreshButton;
-        private TextBox delete_box;
+        private ListView projects_listview;
+        private ColumnHeader name_column;
+        private ColumnHeader Startdate;
+        private ColumnHeader FinishDate;
+        private GroupBox groupBox1;
+        private ToolTip toolTip1;
+        private ColumnHeader Manager;
     }
 }

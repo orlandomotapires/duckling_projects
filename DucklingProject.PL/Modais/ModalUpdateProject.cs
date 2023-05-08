@@ -14,7 +14,7 @@ namespace DucklingProject.PL.Modais
 {
     public partial class ModalUpdateProject : Form
     {
-       
+
         public ModalUpdateProject()
         {
             InitializeComponent();
@@ -23,19 +23,27 @@ namespace DucklingProject.PL.Modais
         int id = -1;
         private void search_button_Click(object sender, EventArgs e)
         {
-            ProjectRepository pr = new ProjectRepository();
-            ManagerRepository mr = new ManagerRepository();
-            StatusRepository sr = new StatusRepository();
-            TbProject searched;
+            try
+            {
+                ProjectRepository pr = new ProjectRepository();
+                ManagerRepository mr = new ManagerRepository();
+                StatusRepository sr = new StatusRepository();
+                TbProject searched;
 
-            searched = pr.GetByName(name_textbox.Text);
+                searched = pr.GetByName(name_textbox.Text);
 
-            managersComboBox.Text = mr.GetById(searched.IdManager).ManagerName;
-            statusBox.Text = sr.GetById(searched.IdStatus).Status;
-            description_textbox.Text = searched.ProjectDescription;
-            finishdate_picker.Text = searched.DtFinish;
-            dateTimePicker1.Text = searched.DtStart;
-            id = searched.IdProject;
+                manager_combobox.Text = mr.GetById(searched.IdManager).ManagerName;
+                status_combobox.Text = sr.GetById(searched.IdStatus).Status;
+                description_textbox.Text = searched.ProjectDescription;
+                finishdate_picker.Text = searched.DtFinish;
+                startdate_picker.Text = searched.DtStart;
+                id = searched.IdProject;
+
+                MessageBox.Show("Project found! Data retrived");
+            }catch (Exception ex)
+            {
+                MessageBox.Show("Project not found, check the name!");
+            }
         }
 
         private void statusBox_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -44,9 +52,9 @@ namespace DucklingProject.PL.Modais
 
             sr.GetAll().ForEach(ts =>
             {
-                if (!statusBox.Items.Contains(ts.Status))
+                if (!status_combobox.Items.Contains(ts.Status))
                 {
-                    statusBox.Items.Add(ts.Status);
+                    status_combobox.Items.Add(ts.Status);
                 }
             });
         }
@@ -58,9 +66,9 @@ namespace DucklingProject.PL.Modais
 
             mr.GetAll().ForEach(tm =>
             {
-                if (!managersComboBox.Items.Contains(tm.ManagerName))
+                if (!manager_combobox.Items.Contains(tm.ManagerName))
                 {
-                    managersComboBox.Items.Add(tm.ManagerName);
+                    manager_combobox.Items.Add(tm.ManagerName);
                 }
             });
 
@@ -68,7 +76,8 @@ namespace DucklingProject.PL.Modais
 
         private void update_button_Click(object sender, EventArgs e)
         {
-            try{
+            try
+            {
                 ProjectRepository pr = new ProjectRepository();
                 ManagerRepository mr = new ManagerRepository();
                 StatusRepository sr = new StatusRepository();
@@ -77,17 +86,31 @@ namespace DucklingProject.PL.Modais
 
                 update.IdProject = id;
                 update.ProjectName = name_textbox.Text;
-                update.IdManager = mr.GetByName(managersComboBox.Text).IdManager;
-                update.IdStatus = sr.GetByName(statusBox.Text).IdStatus;
+                update.IdManager = mr.GetByName(manager_combobox.Text).IdManager;
+                update.IdStatus = sr.GetByName(status_combobox.Text).IdStatus;
                 update.ProjectDescription = description_textbox.Text;
                 update.DtFinish = finishdate_picker.Text;
-                update.DtStart = dateTimePicker1.Text;
+                update.DtStart = startdate_picker.Text;
                 pr.Update(update);
+
+                MessageBox.Show("Project updated successfully!");
             }
-            catch(Exception ex)
-            { 
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void stausadd_button_Click(object sender, EventArgs e)
+        {
+            ModalStatus ms = new ModalStatus();
+            ms.Show();
+        }
+
+        private void manageradd_button_Click_1(object sender, EventArgs e)
+        {
+            ModalManager ms = new ModalManager();
+            ms.Show();
         }
     }
 }

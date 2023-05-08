@@ -1,0 +1,17 @@
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.DAL.deps.json
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.DAL.runtimeconfig.json
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.DAL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.DAL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.MODEL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\bin\Release\net6.0\DucklingProject.MODEL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.csproj.AssemblyReference.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.AssemblyInfoInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.AssemblyInfo.cs
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.csproj.CopyComplete
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\refint\DucklingProject.DAL.dll
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.pdb
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\DucklingProject.DAL.genruntimeconfig.cache
+C:\Users\Orlando Mota\Documents\coisasNOVAS\Programacao\RepositoriosGithub\DucklingProject\DucklingProject.DAL\obj\Release\net6.0\ref\DucklingProject.DAL.dll

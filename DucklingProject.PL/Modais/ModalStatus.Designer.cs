@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             inserirStatusBox = new TextBox();
-            inserirStatusLabel = new Label();
+            inserirStatus_label = new Label();
             criaStatusButton = new Button();
             SuspendLayout();
             // 
@@ -40,22 +40,24 @@
             inserirStatusBox.Size = new Size(100, 23);
             inserirStatusBox.TabIndex = 0;
             // 
-            // inserirStatusLabel
+            // inserirStatus_label
             // 
-            inserirStatusLabel.AutoSize = true;
-            inserirStatusLabel.Location = new Point(12, 23);
-            inserirStatusLabel.Name = "inserirStatusLabel";
-            inserirStatusLabel.Size = new Size(120, 15);
-            inserirStatusLabel.TabIndex = 1;
-            inserirStatusLabel.Text = "Insira um novo status";
+            inserirStatus_label.AutoSize = true;
+            inserirStatus_label.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            inserirStatus_label.ForeColor = Color.DarkOrange;
+            inserirStatus_label.Location = new Point(12, 9);
+            inserirStatus_label.Name = "inserirStatus_label";
+            inserirStatus_label.Size = new Size(169, 28);
+            inserirStatus_label.TabIndex = 1;
+            inserirStatus_label.Text = "Insert status name";
             // 
             // criaStatusButton
             // 
-            criaStatusButton.Location = new Point(93, 97);
+            criaStatusButton.Location = new Point(119, 104);
             criaStatusButton.Name = "criaStatusButton";
-            criaStatusButton.Size = new Size(75, 23);
+            criaStatusButton.Size = new Size(90, 23);
             criaStatusButton.TabIndex = 2;
-            criaStatusButton.Text = "Criar Status";
+            criaStatusButton.Text = "Create status";
             criaStatusButton.UseVisualStyleBackColor = true;
             criaStatusButton.Click += criaStatusButton_Click;
             // 
@@ -63,12 +65,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(189, 139);
+            BackColor = Color.Black;
+            ClientSize = new Size(221, 139);
             Controls.Add(criaStatusButton);
-            Controls.Add(inserirStatusLabel);
+            Controls.Add(inserirStatus_label);
             Controls.Add(inserirStatusBox);
             Name = "ModalStatus";
-            Text = "ModalStatus";
+            ShowIcon = false;
+            Text = "Create status";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -76,7 +80,7 @@
         #endregion
 
         private TextBox inserirStatusBox;
-        private Label inserirStatusLabel;
+        private Label inserirStatus_label;
         private Button criaStatusButton;
     }
 }

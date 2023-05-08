@@ -1,4 +1,6 @@
-﻿namespace DucklingProject.PL
+﻿using System.Windows.Forms;
+
+namespace DucklingProject.PL
 {
     partial class ModalCreateProject
     {
@@ -28,119 +30,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            newproject_label = new Label();
-            ProjectList = new GroupBox();
-            criarManager = new Button();
-            addStatus = new Button();
+            createproject_label = new Label();
+            manageradd_button = new Button();
+            statusadd_button = new Button();
             finishdate_picker = new DateTimePicker();
             startdate_picker = new DateTimePicker();
-            managersComboBox = new ComboBox();
-            statusBox = new ComboBox();
+            manager_combobox = new ComboBox();
+            status_combobox = new ComboBox();
             status_box = new Label();
             name_textbox = new TextBox();
             create_button = new Button();
             description_textbox = new TextBox();
             descripition_label = new Label();
             finish_date_label = new Label();
-            start_date_label = new Label();
+            startdate_label = new Label();
             manager_label = new Label();
             name_label = new Label();
+            ProjectList = new GroupBox();
             ProjectList.SuspendLayout();
             SuspendLayout();
             // 
-            // newproject_label
+            // createproject_label
             // 
-            newproject_label.AutoSize = true;
-            newproject_label.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            newproject_label.Location = new Point(296, 19);
-            newproject_label.Name = "newproject_label";
-            newproject_label.Size = new Size(127, 25);
-            newproject_label.TabIndex = 11;
-            newproject_label.Text = "New Project";
+            createproject_label.AutoSize = true;
+            createproject_label.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            createproject_label.ForeColor = Color.DarkOrange;
+            createproject_label.Location = new Point(23, 19);
+            createproject_label.Name = "createproject_label";
+            createproject_label.Size = new Size(148, 25);
+            createproject_label.TabIndex = 11;
+            createproject_label.Text = "Create project";
             // 
-            // ProjectList
+            // manageradd_button
             // 
-            ProjectList.Controls.Add(criarManager);
-            ProjectList.Controls.Add(addStatus);
-            ProjectList.Controls.Add(finishdate_picker);
-            ProjectList.Controls.Add(startdate_picker);
-            ProjectList.Controls.Add(managersComboBox);
-            ProjectList.Controls.Add(statusBox);
-            ProjectList.Controls.Add(status_box);
-            ProjectList.Controls.Add(name_textbox);
-            ProjectList.Controls.Add(create_button);
-            ProjectList.Controls.Add(newproject_label);
-            ProjectList.Controls.Add(description_textbox);
-            ProjectList.Controls.Add(descripition_label);
-            ProjectList.Controls.Add(finish_date_label);
-            ProjectList.Controls.Add(start_date_label);
-            ProjectList.Controls.Add(manager_label);
-            ProjectList.Controls.Add(name_label);
-            ProjectList.Location = new Point(12, 12);
-            ProjectList.Name = "ProjectList";
-            ProjectList.Size = new Size(680, 416);
-            ProjectList.TabIndex = 12;
-            ProjectList.TabStop = false;
+            manageradd_button.Location = new Point(248, 113);
+            manageradd_button.Name = "manageradd_button";
+            manageradd_button.Size = new Size(30, 22);
+            manageradd_button.TabIndex = 26;
+            manageradd_button.Text = "+";
+            manageradd_button.UseVisualStyleBackColor = true;
+            manageradd_button.Click += manageradd_button_Click;
             // 
-            // criarManager
+            // statusadd_button
             // 
-            criarManager.Location = new Point(253, 104);
-            criarManager.Name = "criarManager";
-            criarManager.Size = new Size(30, 22);
-            criarManager.TabIndex = 26;
-            criarManager.Text = "+";
-            criarManager.UseVisualStyleBackColor = true;
-            criarManager.Click += criarManager_Click;
-            // 
-            // addStatus
-            // 
-            addStatus.Location = new Point(253, 195);
-            addStatus.Name = "addStatus";
-            addStatus.Size = new Size(30, 22);
-            addStatus.TabIndex = 25;
-            addStatus.Text = "+";
-            addStatus.UseVisualStyleBackColor = true;
-            addStatus.Click += addStatus_Click;
+            statusadd_button.Location = new Point(248, 186);
+            statusadd_button.Name = "statusadd_button";
+            statusadd_button.Size = new Size(30, 22);
+            statusadd_button.TabIndex = 25;
+            statusadd_button.Text = "+";
+            statusadd_button.UseVisualStyleBackColor = true;
+            statusadd_button.Click += statusadd_button_Click;
             // 
             // finishdate_picker
             // 
-            finishdate_picker.Location = new Point(450, 151);
+            finishdate_picker.Location = new Point(445, 147);
             finishdate_picker.Name = "finishdate_picker";
             finishdate_picker.Size = new Size(200, 23);
             finishdate_picker.TabIndex = 24;
             // 
             // startdate_picker
             // 
-            startdate_picker.Location = new Point(126, 151);
+            startdate_picker.Location = new Point(121, 149);
             startdate_picker.Name = "startdate_picker";
             startdate_picker.Size = new Size(200, 23);
             startdate_picker.TabIndex = 13;
             // 
-            // managersComboBox
+            // manager_combobox
             // 
-            managersComboBox.FormattingEnabled = true;
-            managersComboBox.Location = new Point(126, 105);
-            managersComboBox.Name = "managersComboBox";
-            managersComboBox.Size = new Size(121, 23);
-            managersComboBox.TabIndex = 23;
-            managersComboBox.SelectedIndexChanged += managersComboBox_SelectedIndexChanged;
-            managersComboBox.Click += managersComboBox_SelectedIndexChanged;
+            manager_combobox.FormattingEnabled = true;
+            manager_combobox.Location = new Point(121, 112);
+            manager_combobox.Name = "manager_combobox";
+            manager_combobox.Size = new Size(121, 23);
+            manager_combobox.TabIndex = 23;
+            manager_combobox.SelectedIndexChanged += managersComboBox_SelectedIndexChanged;
+            manager_combobox.Click += managersComboBox_SelectedIndexChanged;
             // 
-            // statusBox
+            // status_combobox
             // 
-            statusBox.FormattingEnabled = true;
-            statusBox.Location = new Point(126, 194);
-            statusBox.Name = "statusBox";
-            statusBox.Size = new Size(121, 23);
-            statusBox.TabIndex = 13;
-            statusBox.SelectedIndexChanged += statusBox_SelectedIndexChanged_1;
-            statusBox.Click += statusBox_SelectedIndexChanged_1;
+            status_combobox.FormattingEnabled = true;
+            status_combobox.Location = new Point(121, 185);
+            status_combobox.Name = "status_combobox";
+            status_combobox.Size = new Size(121, 23);
+            status_combobox.TabIndex = 13;
+            status_combobox.Click += statusBox_SelectedIndexChanged_1;
             // 
             // status_box
             // 
             status_box.AutoSize = true;
             status_box.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            status_box.Location = new Point(28, 194);
+            status_box.ForeColor = Color.DarkOrange;
+            status_box.Location = new Point(23, 183);
             status_box.Name = "status_box";
             status_box.Size = new Size(55, 21);
             status_box.TabIndex = 22;
@@ -148,14 +127,16 @@
             // 
             // name_textbox
             // 
-            name_textbox.Location = new Point(126, 62);
+            name_textbox.Location = new Point(121, 75);
             name_textbox.Name = "name_textbox";
             name_textbox.Size = new Size(100, 23);
             name_textbox.TabIndex = 18;
             // 
             // create_button
             // 
-            create_button.Location = new Point(555, 355);
+            create_button.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            create_button.ForeColor = Color.Black;
+            create_button.Location = new Point(550, 355);
             create_button.Name = "create_button";
             create_button.Size = new Size(119, 55);
             create_button.TabIndex = 17;
@@ -165,7 +146,9 @@
             // 
             // description_textbox
             // 
-            description_textbox.Location = new Point(28, 286);
+            description_textbox.BackColor = SystemColors.InfoText;
+            description_textbox.ForeColor = Color.White;
+            description_textbox.Location = new Point(23, 286);
             description_textbox.Multiline = true;
             description_textbox.Name = "description_textbox";
             description_textbox.Size = new Size(322, 115);
@@ -174,10 +157,11 @@
             // descripition_label
             // 
             descripition_label.AutoSize = true;
-            descripition_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            descripition_label.Location = new Point(28, 262);
+            descripition_label.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            descripition_label.ForeColor = Color.DarkOrange;
+            descripition_label.Location = new Point(23, 255);
             descripition_label.Name = "descripition_label";
-            descripition_label.Size = new Size(92, 21);
+            descripition_label.Size = new Size(116, 28);
             descripition_label.TabIndex = 15;
             descripition_label.Text = "Description:";
             // 
@@ -185,27 +169,30 @@
             // 
             finish_date_label.AutoSize = true;
             finish_date_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            finish_date_label.Location = new Point(354, 151);
+            finish_date_label.ForeColor = Color.DarkOrange;
+            finish_date_label.Location = new Point(349, 149);
             finish_date_label.Name = "finish_date_label";
             finish_date_label.Size = new Size(90, 21);
             finish_date_label.TabIndex = 14;
             finish_date_label.Text = "Finish Date:";
             // 
-            // start_date_label
+            // startdate_label
             // 
-            start_date_label.AutoSize = true;
-            start_date_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            start_date_label.Location = new Point(28, 151);
-            start_date_label.Name = "start_date_label";
-            start_date_label.Size = new Size(81, 21);
-            start_date_label.TabIndex = 13;
-            start_date_label.Text = "Start Date:";
+            startdate_label.AutoSize = true;
+            startdate_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            startdate_label.ForeColor = Color.DarkOrange;
+            startdate_label.Location = new Point(23, 149);
+            startdate_label.Name = "startdate_label";
+            startdate_label.Size = new Size(81, 21);
+            startdate_label.TabIndex = 13;
+            startdate_label.Text = "Start Date:";
             // 
             // manager_label
             // 
             manager_label.AutoSize = true;
             manager_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            manager_label.Location = new Point(28, 107);
+            manager_label.ForeColor = Color.DarkOrange;
+            manager_label.Location = new Point(23, 110);
             manager_label.Name = "manager_label";
             manager_label.Size = new Size(75, 21);
             manager_label.TabIndex = 12;
@@ -215,20 +202,47 @@
             // 
             name_label.AutoSize = true;
             name_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            name_label.Location = new Point(28, 60);
+            name_label.ForeColor = Color.DarkOrange;
+            name_label.Location = new Point(23, 73);
             name_label.Name = "name_label";
             name_label.Size = new Size(55, 21);
             name_label.TabIndex = 11;
             name_label.Text = "Name:";
             // 
+            // ProjectList
+            // 
+            ProjectList.Controls.Add(manageradd_button);
+            ProjectList.Controls.Add(statusadd_button);
+            ProjectList.Controls.Add(finishdate_picker);
+            ProjectList.Controls.Add(startdate_picker);
+            ProjectList.Controls.Add(manager_combobox);
+            ProjectList.Controls.Add(status_combobox);
+            ProjectList.Controls.Add(status_box);
+            ProjectList.Controls.Add(name_textbox);
+            ProjectList.Controls.Add(create_button);
+            ProjectList.Controls.Add(createproject_label);
+            ProjectList.Controls.Add(description_textbox);
+            ProjectList.Controls.Add(descripition_label);
+            ProjectList.Controls.Add(finish_date_label);
+            ProjectList.Controls.Add(startdate_label);
+            ProjectList.Controls.Add(manager_label);
+            ProjectList.Controls.Add(name_label);
+            ProjectList.Location = new Point(12, 13);
+            ProjectList.Name = "ProjectList";
+            ProjectList.Size = new Size(680, 416);
+            ProjectList.TabIndex = 12;
+            ProjectList.TabStop = false;
+            // 
             // ModalCreateProject
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(704, 441);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(706, 443);
             Controls.Add(ProjectList);
             Name = "ModalCreateProject";
-            Text = "Tela secundária";
+            ShowIcon = false;
+            Text = "Create Project";
             ProjectList.ResumeLayout(false);
             ProjectList.PerformLayout();
             ResumeLayout(false);
@@ -236,9 +250,8 @@
 
         #endregion
 
-        public Label newproject_label;
-        public GroupBox ProjectList;
-        public Label start_date_label;
+        public Label createproject_label;
+        public Label startdate_label;
         public Label manager_label;
         public Label name_label;
         public Label descripition_label;
@@ -248,10 +261,11 @@
         public TextBox name_textbox;
         public DateTimePicker finishdate_picker;
         public DateTimePicker startdate_picker;
-        public ComboBox managersComboBox;
-        public ComboBox statusBox;
+        public ComboBox manager_combobox;
+        public ComboBox status_combobox;
         public Label status_box;
-        private Button addStatus;
-        private Button criarManager;
+        private Button statusadd_button;
+        private Button manageradd_button;
+        public GroupBox ProjectList;
     }
 }

@@ -11,27 +11,15 @@ namespace DucklingProject.PL
             InitializeComponent();
         }
 
-        private void addStatus_Click(object sender, EventArgs e)
-        {
-            ModalStatus ms = new ModalStatus();
-            ms.Show();
-        }
-
-        private void criarManager_Click(object sender, EventArgs e)
-        {
-            ModalManager ms = new ModalManager();
-            ms.Show();
-        }
-
         private void managersComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ManagerRepository mr = new ManagerRepository();
 
             mr.GetAll().ForEach(tm =>
             {
-                if (!managersComboBox.Items.Contains(tm.ManagerName))
+                if (!manager_combobox.Items.Contains(tm.ManagerName))
                 {
-                    managersComboBox.Items.Add(tm.ManagerName);
+                    manager_combobox.Items.Add(tm.ManagerName);
                 }
             });
         }
@@ -42,9 +30,9 @@ namespace DucklingProject.PL
 
             sr.GetAll().ForEach(ts =>
             {
-                if (!statusBox.Items.Contains(ts.Status))
+                if (!status_combobox.Items.Contains(ts.Status))
                 {
-                    statusBox.Items.Add(ts.Status);
+                    status_combobox.Items.Add(ts.Status);
                 }
             });
         }
@@ -59,8 +47,8 @@ namespace DucklingProject.PL
                 StatusRepository sr = new StatusRepository();
                 ProjectRepository pr = new ProjectRepository();
 
-                tbProject.IdManager = mr.GetByName(managersComboBox.Text).IdManager;
-                tbProject.IdStatus = sr.GetByName(statusBox.Text).IdStatus;
+                tbProject.IdManager = mr.GetByName(manager_combobox.Text).IdManager;
+                tbProject.IdStatus = sr.GetByName(status_combobox.Text).IdStatus;
 
                 tbProject.ProjectDescription = description_textbox.Text;
                 tbProject.ProjectName = name_textbox.Text;
@@ -77,9 +65,22 @@ namespace DucklingProject.PL
             {
                 MessageBox.Show(ex.Message);
             }
-        
+
             TelaPrincipal telaPrincipal = new TelaPrincipal();
-            telaPrincipal.projectsLog(); 
+            telaPrincipal.projectsLog();
         }
+
+        private void manageradd_button_Click(object sender, EventArgs e)
+        {
+            ModalManager ms = new ModalManager();
+            ms.Show();
+        }
+
+        private void statusadd_button_Click(object sender, EventArgs e)
+        {
+            ModalStatus ms = new ModalStatus();
+            ms.Show();
+        }
+
     }
 }

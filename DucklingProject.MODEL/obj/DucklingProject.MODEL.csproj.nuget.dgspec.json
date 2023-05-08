@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferna\\Documents\\GitHub\\Duckling-Project\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj": {}
+    "C:\\Users\\Orlando Mota\\Documents\\coisasNOVAS\\Programacao\\RepositoriosGithub\\DucklingProject\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferna\\Documents\\GitHub\\Duckling-Project\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj": {
+    "C:\\Users\\Orlando Mota\\Documents\\coisasNOVAS\\Programacao\\RepositoriosGithub\\DucklingProject\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferna\\Documents\\GitHub\\Duckling-Project\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj",
+        "projectUniqueName": "C:\\Users\\Orlando Mota\\Documents\\coisasNOVAS\\Programacao\\RepositoriosGithub\\DucklingProject\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj",
         "projectName": "DucklingProject.MODEL",
-        "projectPath": "C:\\Users\\Ferna\\Documents\\GitHub\\Duckling-Project\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj",
-        "packagesPath": "C:\\Users\\Ferna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferna\\Documents\\GitHub\\Duckling-Project\\DucklingProject.MODEL\\obj\\",
+        "projectPath": "C:\\Users\\Orlando Mota\\Documents\\coisasNOVAS\\Programacao\\RepositoriosGithub\\DucklingProject\\DucklingProject.MODEL\\DucklingProject.MODEL.csproj",
+        "packagesPath": "C:\\Users\\Orlando Mota\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Orlando Mota\\Documents\\coisasNOVAS\\Programacao\\RepositoriosGithub\\DucklingProject\\DucklingProject.MODEL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Orlando Mota\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
