@@ -30,6 +30,7 @@
         {
             updateproject_label = new Label();
             ProjectList = new GroupBox();
+            search_button = new Button();
             criarManager = new Button();
             addStatus = new Button();
             finishdate_picker = new DateTimePicker();
@@ -60,6 +61,7 @@
             // 
             // ProjectList
             // 
+            ProjectList.Controls.Add(search_button);
             ProjectList.Controls.Add(criarManager);
             ProjectList.Controls.Add(addStatus);
             ProjectList.Controls.Add(finishdate_picker);
@@ -81,6 +83,16 @@
             ProjectList.Size = new Size(680, 416);
             ProjectList.TabIndex = 12;
             ProjectList.TabStop = false;
+            // 
+            // search_button
+            // 
+            search_button.Location = new Point(241, 62);
+            search_button.Name = "search_button";
+            search_button.Size = new Size(75, 23);
+            search_button.TabIndex = 27;
+            search_button.Text = "Search";
+            search_button.UseVisualStyleBackColor = true;
+            search_button.Click += search_button_Click;
             // 
             // criarManager
             // 
@@ -121,6 +133,8 @@
             managersComboBox.Name = "managersComboBox";
             managersComboBox.Size = new Size(121, 23);
             managersComboBox.TabIndex = 23;
+            managersComboBox.SelectedIndexChanged += managersComboBox_SelectedIndexChanged;
+            managersComboBox.Click += managersComboBox_SelectedIndexChanged;
             // 
             // statusBox
             // 
@@ -129,6 +143,7 @@
             statusBox.Name = "statusBox";
             statusBox.Size = new Size(121, 23);
             statusBox.TabIndex = 13;
+            statusBox.Click += statusBox_SelectedIndexChanged_1;
             // 
             // status_box
             // 
@@ -155,6 +170,7 @@
             update_button.TabIndex = 17;
             update_button.Text = "Update";
             update_button.UseVisualStyleBackColor = true;
+            update_button.Click += update_button_Click;
             // 
             // description_textbox
             // 
@@ -246,6 +262,6 @@
         public Label status_box;
         private Button addStatus;
         private Button criarManager;
-
+        private Button search_button;
     }
 }

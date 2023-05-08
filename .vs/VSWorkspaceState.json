@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DucklingProject.BLL",
+    "\\DucklingProject.DAL",
+    "\\DucklingProject.MODEL",
+    "\\DucklingProject.PL"
   ],
   "SelectedNode": "\\DucklingProject.sln",
   "PreviewInSolutionExplorer": false

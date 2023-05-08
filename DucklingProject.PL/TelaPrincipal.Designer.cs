@@ -48,6 +48,7 @@
             colorDialog1 = new ColorDialog();
             ch = new ColumnHeader();
             refreshButton = new Button();
+            delete_box = new TextBox();
             ProjectList.SuspendLayout();
             SuspendLayout();
             // 
@@ -215,12 +216,20 @@
             refreshButton.UseVisualStyleBackColor = true;
             refreshButton.Click += refreshButton_Click;
             // 
+            // delete_box
+            // 
+            delete_box.Location = new Point(251, 249);
+            delete_box.Name = "delete_box";
+            delete_box.Size = new Size(100, 23);
+            delete_box.TabIndex = 12;
+            // 
             // TelaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(944, 501);
+            Controls.Add(delete_box);
             Controls.Add(refreshButton);
             Controls.Add(log_label);
             Controls.Add(ProjectList);
@@ -228,7 +237,7 @@
             Controls.Add(deleteproject_button);
             Controls.Add(updateproject_button);
             Controls.Add(createproject_button);
-            //me = "TelaPrincipal";
+            //Name = "TelaPrincipal";
             Text = "Tela principal";
             Load += TelaPrincipal_Load;
             ProjectList.ResumeLayout(false);
@@ -259,5 +268,6 @@
         private ColumnHeader ch;
         private ColumnHeader Abacaxi;
         private Button refreshButton;
+        private TextBox delete_box;
     }
 }

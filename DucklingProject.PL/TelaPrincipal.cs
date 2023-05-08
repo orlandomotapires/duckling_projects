@@ -20,6 +20,8 @@ namespace DucklingProject.PL
 
         private void deleteproject_button_Click(object sender, EventArgs e)
         {
+            ProjectRepository pr = new ProjectRepository();
+            pr.DeleteByName(delete_box.Text);
 
         }
 

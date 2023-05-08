@@ -18,8 +18,15 @@ namespace DucklingProject.BLL
         {
             using (var dbContext = new DbSet())
             {
-                var all_projects = dbContext.TbProjects.ToList();
-                return all_projects;
+                if(dbContext.TbProjects.ToList() != null)
+                {
+                    return dbContext.TbProjects.ToList();
+                }
+                else
+                {
+                    return new List<TbProject>();
+                }
+                
             }
         }
 
@@ -38,6 +45,30 @@ namespace DucklingProject.BLL
             {
                 var project = dbContext.TbProjects.Single(p => p.ProjectName == projectName);
                 return project;
+            }
+        }
+        public void Update(TbProject _projeto)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var project = dbContext.TbProjects.Single(p => p.IdProject == _projeto.IdProject);
+                project.IdProject = _projeto.IdProject;
+                project.ProjectDescription = _projeto.ProjectDescription;
+                project.DtStart = _projeto.DtStart;
+                project.DtFinish = _projeto.DtFinish;
+                project.ProjectName = _projeto.ProjectName;
+                project.IdStatus = _projeto.IdStatus;
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void DeleteByName(string nome)
+        {
+            using (var dbContext = new DbSet())
+            {
+                var project = dbContext.TbProjects.Single(p => p.ProjectName == nome);
+                dbContext.Remove(project);
+                dbContext.SaveChanges();
             }
         }
     }
