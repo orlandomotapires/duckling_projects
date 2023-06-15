@@ -1,0 +1,49 @@
+# Ignore Visual Studio files
+.vs/
+*.sln
+*.suo
+*.user
+*.csproj.user
+*.userprefs
+bin/
+obj/
+TestResults/
+
+# Ignore build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+*.pfx
+*.snk
+
+# Ignore miscellaneous files
+[Tt]humbs.db
+*.log
+*.bak
+*.cache
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Resharper cache and settings
+_ReSharper*/
+
+# Ignore Rider settings
+.idea/
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore project-specific files
+ProjectSettings.json
+VSWorkspaceState.json
+
+# Ignore database file (if necessary)
+slnx.sqlite
