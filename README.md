@@ -17,7 +17,7 @@
 
 ## About 🤔:
 
-My GitHub project is a multi-layered application developed in Visual Studio and Windows Forms. It allows users to manage and organize their projects by creating, modifying, and deleting them. The project was created as part of the Programming Language III course at SENAI CIMATEC, with a focus on object-oriented programming and application development. The application provides a user-friendly interface and demonstrates best practices in software development. It serves as a valuable learning tool for mastering programming concepts and building robust applications.
+Duckling Project is a multi-layered application developed in Visual Studio and Windows Forms. It allows users to manage and organize their projects by creating, modifying, and deleting them. The project was created as part of the Programming Language III course at SENAI CIMATEC, with a focus on object-oriented programming and application development. The application provides a user-friendly interface and demonstrates best practices in software development. It serves as a valuable learning tool for mastering programming concepts and building robust applications.
 
 ## Resourses 🧑‍🔬:
 
@@ -44,9 +44,11 @@ For installing dependencies more quickly, you can open the project with [Visual 
 
 ## How to run it 🏃:
 
-First, clone this repository. Open the project with [Visual Studio](https://visualstudio.microsoft.com/pt-br/).
+First, clone this repository. Open the project with c, and execute Duckling Projects Presentantion layer.
 
 ## How to install 🔬:
+
+With [Visual Studio](https://visualstudio.microsoft.com/pt-br/),
 
 ## Screens 🎬:
 
@@ -71,7 +73,7 @@ Duckling Projects screens were developed to turn out like [figma](https://www.fi
 
 ## Development Process ⚙️:
 
-Developers used [Trello]() to get things organized, each one using their own branch to code, using names to identify the commit type then merginng the features into develop branch. After testing, the group update the main branch. This application was developed in xx/xx/20xx until xx/xx/20xx.
+Developers used [Trello]() to get things organized, each one using their own branch to code, using names to identify the commit type then merginng the features into develop branch. After testing, the group update the main branch. This application was developed in 18/05/2023 until 23/05/2023.
 
 ### Tools Used 🛠️: 
 
