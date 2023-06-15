@@ -17,12 +17,21 @@
 
 ## About 🤔:
 
+My GitHub project is a multi-layered application developed in Visual Studio and Windows Forms. It allows users to manage and organize their projects by creating, modifying, and deleting them. The project was created as part of the Programming Language III course at SENAI CIMATEC, with a focus on object-oriented programming and application development. The application provides a user-friendly interface and demonstrates best practices in software development. It serves as a valuable learning tool for mastering programming concepts and building robust applications.
 
 ## Resourses 🧑‍🔬:
 
-- 
-- 
-- 
+- Create projects: Users can create new projects by providing details such as name, category, and manager.
+
+- Delete projects: Users have the ability to delete existing projects from the project list, permanently removing them from the application.
+
+- Update projects: Users can modify the details of an existing project, such as name, category, and manager, to keep the information up to date.
+
+- ListView project display: Projects are presented in a ListView, providing an organized and user-friendly interface to navigate and interact with the projects.
+
+- Local database storage: The application utilizes a local database to store and retrieve project information, ensuring data persistence and availability.
+
+- Project status and manager characterization: Each project is categorized and assigned to a responsible manager, enabling users to filter and locate projects based on these specific criteria.
 
 ## Dependencies 🚚:
 
@@ -41,7 +50,7 @@ First, clone this repository. Open the project with [Visual Studio](https://visu
 
 ## Screens 🎬:
 
-<app_name> screens were developed to turn out like [figma](link_for_figma) screens:
+Duckling Projects screens were developed to turn out like [figma](https://www.figma.com/file/il1QnVCtd39ASEbV6NUCwT/Duckling-Projects?type=design&node-id=0%3A1&t=ci8Bg1jgLeJNC5KO-1) screens:
 
 <div align="center">
 	<a href="">
@@ -54,7 +63,7 @@ First, clone this repository. Open the project with [Visual Studio](https://visu
 
 <div align="center">
 	<a href="">
-	<img height = "250em" src = "" />
+	<img height = "250em" src = "https://github.com/orlandomotapires/Duckling-Project/assets/80331486/27107fbe-6b60-49b9-894a-f4f7091c2c23" />
     </a>
 </div>
 
