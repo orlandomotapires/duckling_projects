@@ -56,7 +56,17 @@ Duckling Projects screens were developed to turn out like [figma](https://www.fi
 
 <div align="center">
 	<a href="">
-	<img height = "250em" src = "" />
+	<img height = "250em" src = "https://github.com/orlandomotapires/duckling_projects/assets/80331486/04babe17-d87e-436a-b92c-6a3db540e1af" />
+    </a>
+</div>
+<div align="center">
+	<a href="">
+	<img height = "250em" src = "https://github.com/orlandomotapires/duckling_projects/assets/80331486/bbd8d1e6-c573-48da-a8df-e330ec7feb11" />
+    </a>
+</div>
+<div align="center">
+	<a href="">
+	<img height = "250em" src = "https://github.com/orlandomotapires/duckling_projects/assets/80331486/482ab042-a6ac-4547-99b9-abe98ade653b" />
     </a>
 </div>
 <h4 align="center">Figure 1 - Screens from Duckling Project </h4>
