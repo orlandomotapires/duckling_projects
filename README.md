@@ -37,18 +37,19 @@ Duckling Project is a multi-layered application developed in Visual Studio and W
 
 The project dependencies are described in a dependencies file within the repository. In summary, heres what you're gonna need in order to run the project:
 
-- 
-- 
+- ```entityframeworkcore 7.0.5```
+- ```entityframeworkcore.SqlServer 7.0.5```
+- ```entityframeworkcore.Tools 7.0.5```
 
 For installing dependencies more quickly, you can open the project with [Visual Studio](https://visualstudio.microsoft.com/pt-br/), then install then automatically.
 
 ## How to run it 🏃:
 
-First, clone this repository. Open the project with c, and execute Duckling Projects Presentantion layer.
+First, clone this repository. Open the project with [Visual Studio](https://visualstudio.microsoft.com/pt-br/), change at .DAL layer ```DbSet.cs``` class path to ```Database.mdf``` and execute Duckling Projects Presentantion layer.
 
 ## How to install 🔬:
 
-With [Visual Studio](https://visualstudio.microsoft.com/pt-br/),
+With [Visual Studio](https://visualstudio.microsoft.com/pt-br/), go to the "Build" menu and select "Build Solution" or press Ctrl+Shift+B to build your project. Once the build is successful, go to the project's output folder, the it is gonna be an ```.exe``` file. By default, it is located in the bin\Debug or bin\Release folder within your project directory.
 
 ## Screens 🎬:
 
